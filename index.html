@@ -1,190 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Likesong - Account Deletion</title>
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,Helvetica,sans-serif;
-}
-
-body{
-    background:linear-gradient(135deg,#130022,#240046,#3c096c);
-    color:white;
-    line-height:1.7;
-}
-
-.container{
-    max-width:1000px;
-    margin:auto;
-    padding:40px 20px;
-}
-
-.card{
-    background:rgba(255,255,255,.08);
-    backdrop-filter:blur(12px);
-    border-radius:20px;
-    padding:30px;
-    margin-bottom:25px;
-    border:1px solid rgba(255,255,255,.15);
-}
-
-h1{
-    text-align:center;
-    font-size:42px;
-    margin-bottom:10px;
-}
-
-.subtitle{
-    text-align:center;
-    color:#dddddd;
-    margin-bottom:40px;
-}
-
-h2{
-    margin-bottom:15px;
-    color:#5ddcff;
-}
-
-ul{
-    margin-left:25px;
-}
-
-li{
-    margin:10px 0;
-}
-
-.footer{
-    text-align:center;
-    opacity:.7;
-    margin-top:40px;
-}
-
-a{
-    color:#7cf3ff;
-}
-
-.lang{
-    color:#ff8ce9;
-    margin-bottom:15px;
-    font-size:24px;
-}
-</style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Delete your LikeSong account in the app or request account deletion by email without access to the app.">
+  <meta name="color-scheme" content="dark">
+  <title>Delete your LikeSong account</title>
+  <style>
+    * { box-sizing: border-box; }
+    html { background: #080910; }
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #080910, #111022 65%, #080910);
+      color: #f4f5fa;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      overflow-wrap: anywhere;
+    }
+    main {
+      width: min(100%, 52rem);
+      margin: 0 auto;
+      padding: 48px 24px 32px;
+    }
+    header { padding-bottom: 28px; }
+    h1 { margin: 0 0 16px; font-size: 36px; line-height: 1.2; }
+    h2 {
+      margin: 0 0 16px;
+      color: #80e5ef;
+      font-size: 23px;
+      line-height: 1.35;
+    }
+    p { margin: 0 0 16px; }
+    header p, .note { color: #c4c7d5; }
+    section { padding: 28px 0; border-top: 1px solid #323247; }
+    ol, ul { margin: 0; padding-left: 24px; }
+    li + li { margin-top: 8px; }
+    a { color: #96eef6; text-underline-offset: 4px; }
+    a:hover { color: #fff; }
+    a:focus-visible { outline: 3px solid #f4a6dc; outline-offset: 5px; }
+    .request {
+      padding-left: 20px;
+      padding-right: 20px;
+      border-left: 3px solid #80e5ef;
+      background: #151526;
+    }
+    .request-button {
+      display: inline-block;
+      max-width: 100%;
+      min-height: 48px;
+      margin: 4px 0 16px;
+      padding: 13px 22px;
+      border: 1px solid #a7f6fb;
+      border-radius: 8px;
+      background: linear-gradient(110deg, #9aedf2, #cebcff);
+      color: #101020;
+      font-weight: 700;
+      line-height: 1.4;
+      text-align: center;
+      text-decoration: none;
+    }
+    .request-button:hover { background: #d8faff; color: #101020; }
+    .note { font-size: 15px; }
+    .retained { margin-top: 24px; }
+    footer { padding-top: 24px; border-top: 1px solid #323247; color: #c4c7d5; }
+    footer p:last-child, section p:last-child { margin-bottom: 0; }
+    @media (max-width: 480px) {
+      main { padding: 32px 18px 24px; }
+      h1 { font-size: 30px; }
+      h2 { font-size: 21px; }
+      .request { padding-left: 16px; padding-right: 16px; }
+      .request-button { width: 100%; }
+    }
+  </style>
 </head>
 <body>
+  <main>
+    <header>
+      <h1>Delete your LikeSong account</h1>
+      <p>Users can delete their LikeSong account directly in the app, or request account deletion without access to the app.</p>
+    </header>
 
-<div class="container">
+    <section aria-labelledby="in-app-heading">
+      <h2 id="in-app-heading">Delete in the app</h2>
+      <ol>
+        <li>Open LikeSong.</li>
+        <li>Go to Profile / Settings.</li>
+        <li>Choose <strong>Delete account</strong>.</li>
+        <li>Confirm deletion.</li>
+      </ol>
+    </section>
 
-<h1>Likesong</h1>
-<p class="subtitle">Account Deletion Information</p>
+    <section class="request" aria-labelledby="external-heading">
+      <h2 id="external-heading">Request deletion without the app</h2>
+      <p>If you cannot access the LikeSong app, you can request deletion of your account by email. You do not need to sign in, open the app, or reinstall it to send a request.</p>
+      <a class="request-button" href="mailto:likesong.support@gmail.com?subject=LikeSong%20account%20deletion%20request&amp;body=Hello%2C%0D%0A%0D%0AI%20would%20like%20to%20request%20deletion%20of%20my%20LikeSong%20account.%0D%0A%0D%0AEmail%20used%20for%20my%20LikeSong%20account%3A%0D%0A%5Benter%20email%20here%5D%0D%0A%0D%0AI%20understand%20that%20my%20account%20and%20associated%20personal%20data%20will%20be%20deleted%20or%20anonymized%20according%20to%20the%20LikeSong%20deletion%20policy.%0D%0A%0D%0AThank%20you.">Request account deletion</a>
+      <p class="note">The button opens an email draft. Enter the email address used for your LikeSong account and send the email to submit your request.</p>
+      <p class="note">If no email app opens, use your preferred email service to write to <a href="mailto:likesong.support@gmail.com">likesong.support@gmail.com</a> with the subject <strong>LikeSong account deletion request</strong> and include the email address used for your account.</p>
+    </section>
 
-<div class="card">
+    <section aria-labelledby="data-heading">
+      <h2 id="data-heading">What happens when your account is deleted</h2>
+      <ul>
+        <li>Your profile, including its stored personal information, is deleted.</li>
+        <li>Friend requests and friendship records involving your account are deleted.</li>
+        <li>Private messages sent or received by your account are deleted.</li>
+        <li>Your club chat messages are deleted.</li>
+        <li>Your song votes are deleted.</li>
+        <li>Your user presence and online-status record are deleted.</li>
+        <li>Your club posts are deleted.</li>
+        <li>Your account-linked push token registrations and blocks involving your account are deleted.</li>
+        <li>Your account authentication record is deleted.</li>
+        <li>Your account-owned avatar files are deleted. Club post images are removed when ownership can be verified; unverified legacy images may remain.</li>
+      </ul>
+      <p class="retained">Some content may remain without its original account link:</p>
+      <ul>
+        <li>Songs suggested by you may remain in clubs, but your user ID and avatar are removed and the author is shown as <strong>Deleted user</strong>.</li>
+        <li>Clubs you created may remain, but your account is no longer linked as their owner.</li>
+        <li>Moderation and report records may remain. References to your user ID as the reporter or reported user are removed where applicable.</li>
+      </ul>
+    </section>
 
-<div class="lang">🇬🇧 English</div>
+    <section aria-labelledby="verification-heading">
+      <h2 id="verification-heading">Verifying your request</h2>
+      <p>For security, we may need to verify that the request comes from the owner of the LikeSong account before deletion is completed.</p>
+      <p class="note">Please do not include your password or verification codes in your deletion request.</p>
+    </section>
 
-<h2>Delete your account</h2>
-
-<p>
-You can permanently delete your Likesong account directly in the application:
-</p>
-
-<br>
-
-<b>Profile → Delete account</b>
-
-<br><br>
-
-<h2>When your account is deleted</h2>
-
-<ul>
-<li>Your profile is permanently removed.</li>
-<li>Your avatar is permanently deleted.</li>
-<li>Your friend requests are deleted.</li>
-<li>Your private messages are deleted.</li>
-<li>Your public club messages are deleted.</li>
-<li>Your votes are deleted.</li>
-<li>Your club posts are deleted.</li>
-<li>Your uploaded club post images are deleted whenever possible.</li>
-</ul>
-
-<br>
-
-<h2>Data that remain</h2>
-
-<ul>
-<li>Songs added by you remain available inside clubs.</li>
-<li>The author is anonymized as <b>Deleted user</b>.</li>
-<li>Your user ID and avatar are removed.</li>
-<li>Clubs you created remain available but no longer have an owner.</li>
-</ul>
-
-<br>
-
-<p>
-Deleting your account does not automatically cancel subscriptions purchased through Google Play or the Apple App Store.
-</p>
-
-</div>
-
-<div class="card">
-
-<div class="lang">🇨🇿 Čeština</div>
-
-<h2>Smazání účtu</h2>
-
-<p>
-Účet Likesong lze trvale smazat přímo v aplikaci:
-</p>
-
-<br>
-
-<b>Profil → Smazat účet</b>
-
-<br><br>
-
-<h2>Po smazání účtu budou odstraněna tato data</h2>
-
-<ul>
-<li>Profil uživatele.</li>
-<li>Profilová fotografie.</li>
-<li>Žádosti o přátelství.</li>
-<li>Soukromé zprávy.</li>
-<li>Veřejné klubové zprávy.</li>
-<li>Hlasování.</li>
-<li>Klubové příspěvky.</li>
-<li>Nahrané obrázky klubových příspěvků (pokud je lze identifikovat).</li>
-</ul>
-
-<br>
-
-<h2>Co zůstává zachováno</h2>
-
-<ul>
-<li>Přidané skladby zůstávají v klubech.</li>
-<li>Autor skladby je anonymizován jako <b>Deleted user</b>.</li>
-<li>ID uživatele i avatar jsou odstraněny.</li>
-<li>Kluby vytvořené uživatelem zůstávají zachované, ale již nemají vlastníka.</li>
-</ul>
-
-<br>
-
-<p>
-Smazání účtu automaticky neruší případné předplatné zakoupené přes Google Play nebo Apple App Store.
-</p>
-
-</div>
-
-<div class="footer">
-Likesong © 2026
-</div>
-
-</div>
-
+    <footer aria-label="Support contact">
+      <p><strong>LikeSong Support</strong><br><a href="mailto:likesong.support@gmail.com">likesong.support@gmail.com</a></p>
+    </footer>
+  </main>
 </body>
 </html>
